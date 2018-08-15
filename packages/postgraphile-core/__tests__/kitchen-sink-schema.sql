@@ -438,6 +438,13 @@ create function c.return_table_without_grants() returns c.compound_key as $$
   select * from c.compound_key order by person_id_1, person_id_2 limit 1
 $$ language sql stable security definer;
 
+create table c.null_test_record (
+  id serial primary key,
+  nullable_text text,
+  nullable_int int,
+  non_null_text text not null
+);
+
 -- Begin tests for smart comments
 
 -- Rename table and columns

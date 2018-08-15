@@ -1838,6 +1838,11 @@ Object {
           "notNullHasDefault": false,
           "wontCastEasy": -512,
         },
+        Object {
+          "computed": "hello world",
+          "notNullHasDefault": false,
+          "wontCastEasy": null,
+        },
       ],
     },
     "allPeople": Object {
